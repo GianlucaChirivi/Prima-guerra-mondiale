@@ -1,0 +1,56 @@
+
+@keyframes aperturaCinema {
+  0% {
+    opacity: 0;
+    transform: scale(0.97);
+    filter: brightness(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+@keyframes testoCinema {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+    filter: blur(8px);
+    letter-spacing: 0.08em; 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    letter-spacing: normal;
+  }
+}
+
+.entrata-cinema {
+  animation: aperturaCinema 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.entrata-cinema:not(.carousel) {
+  opacity: 0;
+  animation: none;
+}
+
+.entrata-cinema:not(.carousel).visibile {
+  animation: aperturaCinema 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-content h1 {
+  opacity: 0;
+  animation: testoCinema 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+}
+
+.hero-content p {
+  opacity: 0;
+  animation: testoCinema 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+}
+
+.hero-overlay > div:last-child {
+  opacity: 0;
+  animation: testoCinema 1s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+}

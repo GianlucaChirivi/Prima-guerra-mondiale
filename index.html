@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prima guerra mondiale</title>
+    <link rel="shortcut icon" href="immagini/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+</head>
+
+<body id="top">
+
+    <nav class="navbar-storica">
+        <div class="nav-container">
+            <a href="#top" class="nav-brand">1914-1918 <span>• La Grande Guerra</span></a>
+            <ul class="nav-links">
+                <li><a href="#alleanze">Le Alleanze</a></li>
+                <li><a href="#balcani">Questione Balcanica</a></li>
+                <li><a href="#Guerra_lampo">Guerra lampo</a></li>
+                <li><a href="#scintilla">1914: Lo Scoppio</a></li>
+                <li><a href="#Mappe">I Fronti</a></li>
+                <li><a href="#italia">L'Italia</a></li>
+                <li><a href="#Trincee">Le Trincee</a></li>
+                <li><a href="#fine">La Fine (1918)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel carousel-overlay slide entrata-cinema position-relative">
+        <div id="carouselExampleAutoplaying" class="carousel slide entrata-cinema" data-bs-ride="carousel"
+            data-bs-autoplay="true">
+            <div class="position-relative">
+                <div
+                    class="hero-overlay d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-4 px-4 px-md-5 rounded-5">
+                    <div class="hero-content">
+                        <h1 class="mb-2">La prima guerra mondiale</h1>
+                        <p class="fs-lg mb-0">1914 - 1918: la guerra che ha cambiato l'Europa</p>
+                    </div>
+                    <div>
+                        <a href="#alleanze" class="btn btn-lg btn-solid theme-primary text-nowrap">Scopri di più</a>
+                    </div>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="immagini/Primaslide.png" class="d-block w-100 rounded-5"
+                            alt="Prima slide riguardante la WW1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="immagini/Secondaslide.png" class="d-block w-100 rounded-5"
+                            alt="Seconda slide riguardante la WW1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="immagini/terzaslide.png" class="d-block w-100 rounded-5"
+                            alt="Terza slide riguardante la WW1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div>
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-icon-prev" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-icon-next" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- alleanze -->
+    <div id="alleanze" class="body_info entrata-cinema">
+        <div class="imm_europa">
+            <img src="immagini/imm_europa.jpg" alt="Mappa dell'Europa tra il 1907 e il 1917">
+        </div>
+
+        <div class="colonna-destra">
+            <h2>Come si arriva alla guerra</h2>
+            <h3>Prima del 1914 le grandi potenze europee si erano divise in due gruppi, e ognuno si preparava a
+                difendersi dall'altro.</h3>
+
+            <div class="T_intesa">
+                <div class="card-alleanza intesa">
+                    <h4>Triplice Intesa</h4>
+                    <p>La <b class="tooltip-link" data-bs-toggle="tooltip"
+                            data-bs-title="Triplice Intesa (1907-1917): Francia, Gran Bretagna, Impero russo.">Triplice
+                            Intesa</b> si forma nel 1907 ed è un <b>accordo</b> tra tre paesi che vogliono fermare la
+                        Germania e l'Austria.</p>
+                </div>
+
+                <div class="card-alleanza alleanza">
+                    <h4>Triplice Alleanza</h4>
+                    <p>La <b class="tooltip-link" data-bs-toggle="tooltip"
+                            data-bs-title="Triplice Alleanza (1882-1915): Impero tedesco, Regno d'Italia, Impero austro-ungarico.">Triplice
+                            Alleanza</b> è un <b>patto difensivo</b> del 1882: i tre paesi si aiutano solo se uno di
+                        loro viene attaccato.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- balcani -->
+    <section id="balcani" class="sezione-balcani entrata-cinema">
+        <div class="colonna-testo">
+            <span class="etichetta-anno">1908 - 1913</span>
+            <h2>La Questione Balcanica</h2>
+            <p class="sottotitolo-sezione">
+                L'Impero Ottomano si stava indebolendo e nei Balcani Austria e Russia volevano aumentare la loro
+                influenza. Per questo la zona era molto tesa, tanto che veniva chiamata "polveriera d'Europa".
+            </p>
+
+            <div class="griglia-balcani">
+                <div class="card-balcani austria">
+                    <h3>L'Austria-Ungheria</h3>
+                    <p>Nel <b>1908</b> l'Austria si prende la Bosnia-Erzegovina. La Serbia non è d'accordo perché voleva
+                        riunire sotto di sé gli slavi del sud.</p>
+                </div>
+
+                <div class="card-balcani russia">
+                    <h3>La Russia</h3>
+                    <p>La Russia sostiene la <b>Serbia</b> e gli slavi ortodossi, e allo stesso tempo vuole arrivare al
+                        Mar Mediterraneo.</p>
+                </div>
+            </div>
+
+            <div class="nota-storica">
+                <b>Le Guerre Balcaniche (1912-1913):</b> in due brevi guerre l'Impero Ottomano perde quasi tutti i suoi
+                territori in Europa. La Serbia diventa più forte e questo preoccupa l'Austria.
+            </div>
+        </div>
+
+        <div class="imm_balcani">
+            <img src="immagini/mappa_balcani.jpg" alt="Mappa dei Balcani prima della Prima Guerra Mondiale">
+        </div>
+    </section>
+
+    <!-- guerra lampo e cause -->
+    <section id="Guerra_lampo" class="sezione-storia entrata-cinema">
+        <div class="intestazione-sezione" style="width: 100%;">
+            <span class="etichetta-anno">1914</span>
+            <h2>L'illusione della guerra lampo</h2>
+
+            <div class="layout-guerra-lampo">
+                <div class="colonna-testo-lampo nota-storica">
+                    <p>Nei primi anni del Novecento il quadro internazionale europeo era segnato da un forte antagonismo
+                        tra le grandi potenze, destinato a spezzare gli equilibri continentali e a portare alla
+                        mobilitazione generale. Sebbene lo scoppio di un conflitto fosse ormai nell'aria, nessuno
+                        immaginava le dimensioni e la durata che avrebbe assunto: all'epoca, infatti, tutti credevano in
+                        una rapida <b class="tooltip-link" data-bs-toggle="tooltip"
+                            data-bs-title="Conflitto rapido e risolutivo, basato su grandi offensive iniziali volte a sconfiggere il nemico in poche settimane evitando una lunga guerra di logoramento.">
+                            Guerra lampo</b>.</p>
+                </div>
+
+                <div class="cause_guerra">
+                    <fieldset style="border: 2px solid #b59e7a; padding: 25px; border-radius: 6px;">
+                        <legend
+                            style="float: none; width: auto; padding: 0 15px; margin: 0 auto; font-family: Georgia, serif; font-size: 1.25rem; font-weight: bold; color: #f5f1e8; text-align: center;">
+                            Le principali cause della grande guerra
+                        </legend>
+
+                        <table class="table table-dark table-borderless m-0" style="background-color: transparent;">
+                            <tbody>
+                                <tr>
+                                    <td class="ragione" style="width: 26%; vertical-align: middle; padding-right: 0;">
+                                        <h3
+                                            style="font-size: 1.05rem; margin: 0; color: #161513; background-color: #b59e7a; border-radius: 8px; padding: 12px 14px; text-align: center; font-weight: bold;">
+                                            Ragioni politiche
+                                        </h3>
+                                    </td>
+                                    <td class="linea" style="width: 6%; vertical-align: middle; padding: 0;">
+                                        <div style="height: 2px; background-color: #b59e7a; width: 100%;"></div>
+                                    </td>
+                                    <td class="conseguenza"
+                                        style="width: 68%; vertical-align: middle; padding-left: 0;">
+                                        <ul class="mb-0"
+                                            style="color: #f5f1e8; background-color: #2b1a1a; border: 1px solid #a84646; border-left: 4px solid #a84646; border-radius: 8px; padding: 12px 16px 12px 32px;">
+                                            <li><b>Aggressività della Germania</b></li>
+                                            <li><b>Rivalità franco-tedesca per il possesso di Alsazia e Lorena</b></li>
+                                            <li><b>Contrasto austro-ungarico per il controllo dei Balcani</b></li>
+                                            <li><b><b class="tooltip-link" data-bs-toggle="tooltip"
+                                                        data-bs-title="Movimento politico e culturale di carattere nazionalistico che mira a riunire alla propria nazione (la 'madrepatria') quei territori e quelle popolazioni rimasti sotto il dominio di un altro Stato.">
+                                                        Irredentismi</b> (Italia, Serbia, Polonia, penisola
+                                                    balcanica)</b></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ragione" style="vertical-align: middle; padding-right: 0;">
+                                        <h3
+                                            style="font-size: 1.05rem; margin: 0; color: #161513; background-color: #b59e7a; border-radius: 8px; padding: 12px 14px; text-align: center; font-weight: bold;">
+                                            Ragioni economiche
+                                        </h3>
+                                    </td>
+                                    <td class="linea" style="vertical-align: middle; padding: 0;">
+                                        <div style="height: 2px; background-color: #b59e7a; width: 100%;"></div>
+                                    </td>
+                                    <td class="conseguenza" style="vertical-align: middle; padding-left: 0;">
+                                        <ul class="mb-0"
+                                            style="color: #f5f1e8; background-color: #2b1a1a; border: 1px solid #a84646; border-left: 4px solid #a84646; border-radius: 8px; padding: 12px 16px 12px 32px;">
+                                            <li><b>Rivalità commerciale e coloniale fra Germania e Gran Bretagna</b>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ragione" style="vertical-align: middle; padding-right: 0;">
+                                        <h3
+                                            style="font-size: 1.05rem; margin: 0; color: #161513; background-color: #b59e7a; border-radius: 8px; padding: 12px 14px; text-align: center; font-weight: bold;">
+                                            Ragioni culturali
+                                        </h3>
+                                    </td>
+                                    <td class="linea" style="vertical-align: middle; padding: 0;">
+                                        <div style="height: 2px; background-color: #b59e7a; width: 100%;"></div>
+                                    </td>
+                                    <td class="conseguenza" style="vertical-align: middle; padding-left: 0;">
+                                        <ul class="mb-0"
+                                            style="color: #f5f1e8; background-color: #2b1a1a; border: 1px solid #a84646; border-left: 4px solid #a84646; border-radius: 8px; padding: 12px 16px 12px 32px;">
+                                            <li><b>Spinte nazionalistiche</b></li>
+                                            <li><b>Desiderio di rivalsa francese nei confronti della Germania</b></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- scintilla / 1914 -->
+    <section id="scintilla" class="sezione-storia entrata-cinema">
+        <div class="intestazione-sezione">
+            <span class="etichetta-anno">Giugno - agosto 1914</span>
+            <h2>L'attentato di Sarajevo</h2>
+            <p>La guerra parte da un fatto preciso nei Balcani, e in poche settimane le alleanze fanno il resto.</p>
+        </div>
+
+        <div class="griglia-eventi">
+            <div class="box-evento">
+                <h3>L'attentato</h3>
+                <p>Il <b>28 giugno 1914</b> a Sarajevo lo studente serbo-bosniaco Gavrilo Princip uccide l'arciduca
+                    <b>Francesco Ferdinando</b>, che doveva diventare imperatore d'Austria-Ungheria.
+                </p>
+            </div>
+
+            <div class="box-evento">
+                <h3>La guerra alla Serbia</h3>
+                <p>Il <b>28 luglio</b> l'Austria-Ungheria dichiara guerra alla Serbia, perché la considera colpevole
+                    dell'attentato.</p>
+            </div>
+
+            <div class="box-evento">
+                <h3>La guerra si allarga</h3>
+                <p>La Russia mobilita l'esercito per aiutare la Serbia. La Germania allora dichiara guerra a Russia
+                    e Francia e attacca il Belgio, e così entra in guerra anche la Gran Bretagna.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Mappe" class="sezione-storia sezione_mappe entrata-cinema">
+        <span class="etichetta-anno">1914 - 1915</span>
+        <div class="galleria_mappe">
+
+            <div class="imm_occidente">
+                <h2 style="text-align: center;">Il fronte occidentale</h2>
+                <img src="immagini/occidente.jpeg" alt="Mappa del fronte occidentale della Prima Guerra Mondiale">
+
+                <div class="nota-storica">
+                    <b>Che succede:</b> Al termine del primo anno del conflitto il progetto della guerra lampo fallisce,
+                    dal mare del Nord fino al nord Italia (Trentino e Venezia Giulia), il conflitto si era tramutato in
+                    una <b class="tooltip-link" data-bs-toggle="tooltip"
+                        data-bs-title="Modo di condurre un conflitto in cui i fronti si stabilizzano e gli eserciti rimangono rintanati in postazioni fisse e fortificate per mesi o anni.">
+                        guerra di posizione</b> combattuta nelle trincee.
+                </div>
+            </div>
+
+            <div class="imm_oriente">
+                <h2 style="text-align: center;">Il fronte orientale</h2>
+                <img src="immagini/oriente.jpeg" alt="Mappa del fronte orientale della Prima Guerra Mondiale">
+
+                <div class="nota-storica">
+                    <b>Che succede:</b> Da questo fronte per l'Intesa sarà molto più impegnativo, dove i russi erano
+                    stati ricacciati con gravissime perdite provocate dall'Est-Europa; contemporaneamente, troviamo una
+                    situazione favorevole per gli austro-tedeschi che con l'appoggio della Bulgaria mettono fuori gioco
+                    la Serbia costruendo un fronte ininterrotto dal mar Baltico al mar Egeo.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- italia -->
+    <section id="italia" class="sezione-storia entrata-cinema">
+        <div class="intestazione-sezione">
+            <span class="etichetta-anno">Maggio 1915</span>
+            <h2>L'Italia entra in guerra</h2>
+            <p>L'Italia era alleata di Germania e Austria, ma nel 1914 resta neutrale: il patto era difensivo e a
+                dichiarare guerra era stata l'Austria.</p>
+        </div>
+
+        <div class="box-evidenza">
+            <div>
+                <h3>Dal Patto di Londra al fronte</h3>
+                <p>In Italia ci sono mesi di discussioni tra <b>neutralisti</b>, che vogliono restare fuori, e
+                    <b>interventisti</b>, che vogliono entrare in guerra. Ad aprile 1915 il governo firma in segreto il
+                    <b>Patto di Londra</b> con la Triplice Intesa: in cambio dell'aiuto l'Italia avrebbe avuto Trentino,
+                    Alto Adige, Trieste, Istria e Dalmazia. Il <b>24 maggio 1915</b> l'Italia dichiara guerra
+                    all'Austria-Ungheria.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trincee -->
+    <section id="Trincee" class="sezione-storia entrata-cinema">
+        <div class="intestazione-sezione" style="width: 100%;">
+            <span class="etichetta-anno">1915-1916</span>
+            <h2>Le trincee</h2>
+
+            <div class="griglia-balcani" style="margin-top: 1.5rem;">
+                <div class="nota-storica">
+                    <h3>Come erano fatte</h3>
+                    <p>Le trincee erano <b>opere di fortificazione difensive</b> consistenti in grandi fossati scavati
+                        nella terra o nella roccia e rinforzati con pali di legno e sacchi di sabbia.
+                        Lo spazio tra le linee nemiche era detto <b>"terra di nessuno"</b> e veniva riempito di mine e
+                        reticolati di filo spinato per contrastare gli assalti.</p>
+                </div>
+
+                <div class="nota-storica">
+                    <h3>Le difficili condizioni di vita</h3>
+                    <p>I soldati restavano nelle trincee per settimane o mesi esposti alle intemperie e ai bombardamenti.
+                        Bloccati nel fango, al freddo, tra rifiuti, sporco, pidocchi e topi, gli uomini manifestarono gravi
+                        forme di disagio psichico definite <b>"nevrosi da guerra"</b>. I soldati traumatizzati erano spesso
+                        ricoverati in ospedali psichiatrici militari improvvisati, dove venivano curati con elettroshock
+                        per essere poi rispediti al fronte.</p>
+                </div>
+            </div>
+
+            <div class="griglia-mappe-trincee">
+
+                <div class="box-mappa">
+                    <h3>Schema della trincea</h3>
+                    <div class="cornice-mappa">
+                        <img src="immagini/mappa_trincea.png" alt="Mappa del fronte durante la Prima Guerra Mondiale">
+                    </div>
+                    <p class="didascalia-mappa">Riferimento geografico e territoriale dei settori del fronte.</p>
+                </div>
+
+                <div class="box-mappa">
+                    <h3>Esplora i settori (clicca sui punti)</h3>
+                    <div class="cornice-mappa mappa-interattiva">
+                        <img src="immagini/mappa_interattiva_trincea.png" alt="Schema del sistema difensivo a trincea">
+
+                        <button type="button" class="pin-mappa" style="top: 38%; left: 22%;"
+                            data-titolo="1. Trincea di prima linea"
+                            data-testo="Il punto più esposto al fuoco nemico. Qui i fanti montavano di guardia dietro i parapetti di sacchi di sabbia e lanciavano gli assalti."
+                            onclick="mostraInfoMappa(this)">1</button>
+
+                        <button type="button" class="pin-mappa" style="top: 46%; left: 50%;"
+                            data-titolo="2. Terra di nessuno"
+                            data-testo="La fascia di terreno tra le due trincee opposte: devastata dalle granate, piena di crateri, filo spinato e mine."
+                            onclick="mostraInfoMappa(this)">2</button>
+
+                        <button type="button" class="pin-mappa" style="top: 66%; left: 86%;"
+                            data-titolo="3. Camminamenti e ricoveri"
+                            data-testo="Corridoi scavati per collegare la prima linea alle retrovie senza essere visti dai cecchini, insieme ai rifugi sotterranei per dormire."
+                            onclick="mostraInfoMappa(this)">3</button>
+                    </div>
+
+                    <div id="info-box-mappa" class="pannello-info-mappa">
+                        <div class="pannello-info-mappa-interno">
+                            <h4 id="titolo-punto-mappa">Clicca su un numero sulla mappa</h4>
+                            <p id="testo-punto-mappa">Seleziona uno dei punti numerati sopra per scoprire come funzionava ogni settore del fronte.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- approfondimento brigata sassari -->
+    <section id="brigata-sassari" class="sezione-storia entrata-cinema">
+        <div class="intestazione-sezione" style="max-width: 100%;">
+            <span class="etichetta-anno">Approfondimento • 1915 - 1918</span>
+            <h2>La Brigata Sassari: i "Diavoli"</h2>
+            <p>Costituita il 1° marzo 1915 con il 151° e il 152° Reggimento Fanteria, fu l'unica brigata dell'esercito
+                italiano reclutata quasi interamente su base regionale, formata in gran parte da contadini, minatori e
+                pastori provenienti dalle zone interne della Sardegna.</p>
+        </div>
+
+        <div class="layout-sassari">
+            <div class="imm_sassari">
+                <img src="immagini/brigata_sarda.png"
+                    alt="Soldati della Brigata Sassari durante la Prima Guerra Mondiale">
+                <p class="didascalia-mappa">Fanti della Brigata Sassari al fronte. Il forte legame territoriale e l'uso
+                    della lingua sarda crearono una coesione unica tra i reparti.</p>
+            </div>
+
+            <div class="colonna-sassari">
+                <div class="box-evidenza">
+                    <h3>Dalle terre sarde alle trincee</h3>
+                    <p>Abbonati a una vita dura sulle montagne e nelle campagne della Sardegna, molti fanti portarono
+                        al fronte la resistenza fisica, lo spirito di solidarietà e un forte senso dell'onore. In
+                        trincea comunicavano spesso in sardo, rendendo le loro trasmissioni incomprensibili al nemico, e
+                        si distinsero per l'audacia negli assalti all'arma bianca, guadagnandosi sul campo
+                        l'appellativo di <b>"Diavoli"</b> (dal colore delle mostrine bianco-rosse).</p>
+                </div>
+
+                <div class="griglia-sassari-dettagli">
+                    <div class="card-sassari">
+                        <h4>Le battaglie principali</h4>
+                        <ul>
+                            <li><b>Carso (1915):</b> conquista delle trincee delle Frasche e dei Razzi.</li>
+                            <li><b>Altopiano di Asiago (1916):</b> eroica resistenza sul Monte Fior e Monte Castelgomberto durante la <i>Strafexpedition</i>.</li>
+                            <li><b>Piave (1918):</b> difesa decisiva nella battaglia del Solstizio.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card-sassari">
+                        <h4>Onorificenze e memoria</h4>
+                        <p>Entrambi i reggimenti (151° e 152°) furono decorati con <b>due Medaglie d'Oro al Valor
+                                Militare</b> ciascuno. La loro esperienza fu raccontata anche dallo scrittore <b>Emilio
+                                Lussu</b> nel celebre libro <i>Un anno sull'Altipiano</i>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fine della guerra -->
+    <section id="fine" class="sezione-storia entrata-cinema">
+        <div class="intestazione-sezione">
+            <span class="etichetta-anno">1918</span>
+            <h2>La fine della guerra</h2>
+            <p>Nel 1918 gli Imperi centrali sono ormai stremati e non riescono più a continuare.</p>
+        </div>
+
+        <div class="griglia-eventi">
+            <div class="box-evento">
+                <h3>4 novembre</h3>
+                <p>Entra in vigore l'armistizio di Villa Giusti: l'Austria-Ungheria si arrende all'Italia.</p>
+            </div>
+
+            <div class="box-evento">
+                <h3>11 novembre</h3>
+                <p>La Germania firma l'armistizio con gli Alleati a Compiègne, in Francia, e sul fronte occidentale si
+                    smette di combattere.</p>
+            </div>
+
+            <div class="box-evento">
+                <h3>1919</h3>
+                <p>Con il Trattato di Versailles la guerra con la Germania finisce ufficialmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // attivo i tooltip
+        const lista = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        lista.forEach(function (el) {
+            new bootstrap.Tooltip(el);
+        });
+
+        // le sezioni si animano quando arrivano in vista
+        const daAnimare = document.querySelectorAll('.entrata-cinema:not(.carousel)');
+        const osservatore = new IntersectionObserver(function (voci) {
+            voci.forEach(function (voce) {
+                if (voce.isIntersecting) {
+                    voce.target.classList.add('visibile');
+                    osservatore.unobserve(voce.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        daAnimare.forEach(function (el) {
+            osservatore.observe(el);
+        });
+
+        function mostraInfoMappa(pulsante) {
+            document.querySelectorAll('.pin-mappa').forEach(p => p.classList.remove('attivo'));
+            pulsante.classList.add('attivo');
+
+            document.getElementById('titolo-punto-mappa').textContent = pulsante.getAttribute('data-titolo');
+            document.getElementById('testo-punto-mappa').textContent = pulsante.getAttribute('data-testo');
+        }
+    </script>
+
+</body>
+
+</html>

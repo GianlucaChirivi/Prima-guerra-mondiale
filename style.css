@@ -1,0 +1,799 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #161513;
+  color: #ebe6dc;
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+#alleanze,
+#balcani,
+#Guerra_lampo,
+#scintilla,
+#Mappe,
+#italia,
+#Trincee,
+#fine {
+  scroll-margin-top: 90px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Georgia, serif;
+  color: #f5f1e8;
+}
+
+/* ==================== NAVBAR ==================== */
+
+.navbar-storica {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #161513;
+  border-bottom: 1px solid #33302b;
+  margin: -2rem -1rem 2rem -1rem;
+  padding: 0 1.5rem;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #f5f1e8;
+  text-decoration: none;
+}
+
+.nav-brand span {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #b59e7a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  display: inline-block;
+  color: #cfc8bc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #deab35;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* ==================== CAROSELLO HERO ==================== */
+
+#carouselExampleAutoplaying {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#carouselExampleAutoplaying .carousel-item img {
+  height: 540px;
+  object-fit: cover;
+  filter: brightness(0.7) saturate(0.9);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 2.5rem 4rem;
+  background: linear-gradient(90deg, rgba(22, 21, 19, 0.92) 0%, rgba(22, 21, 19, 0.55) 55%, rgba(22, 21, 19, 0.1) 100%);
+  pointer-events: none;
+}
+
+.hero-content {
+  max-width: 580px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #d6cfc2;
+}
+
+.hero-overlay .btn {
+  pointer-events: auto;
+  background-color: #b59e7a;
+  color: #161513;
+  border: none;
+  border-radius: 50rem;
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.hero-overlay .btn:hover {
+  background-color: #d3bc96;
+  transform: translateY(-2px);
+}
+
+#carouselExampleAutoplaying > .d-flex {
+  padding: 0.9rem 0.25rem 0 0.25rem;
+}
+
+#carouselExampleAutoplaying .carousel-indicators {
+  position: static;
+  margin: 0;
+}
+
+#carouselExampleAutoplaying .carousel-indicators [data-bs-target] {
+  background-color: #b59e7a;
+  height: 4px;
+  width: 28px;
+  opacity: 0.35;
+  transition: width 0.3s, opacity 0.3s;
+}
+
+#carouselExampleAutoplaying .carousel-indicators .active {
+  width: 52px;
+  opacity: 1;
+}
+
+#carouselExampleAutoplaying .btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 0.4rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #4a463f;
+  background-color: transparent;
+  color: #ebe6dc;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#carouselExampleAutoplaying .btn-icon:hover {
+  border-color: #b59e7a;
+  color: #b59e7a;
+  background-color: rgba(181, 158, 122, 0.12);
+}
+
+.carousel-icon-prev::before { content: "\2039"; font-size: 1.6rem; line-height: 1; }
+.carousel-icon-next::before { content: "\203A"; font-size: 1.6rem; line-height: 1; }
+.carousel-icon-pause::before { content: "\275A\275A"; font-size: 0.7rem; }
+.carousel-icon-play { display: none; }
+.carousel-icon-play::before { content: "\25B6"; font-size: 0.75rem; }
+.is-paused .carousel-icon-pause { display: none; }
+.is-paused .carousel-icon-play { display: inline; }
+
+/* ==================== ALLEANZE & BALCANI ==================== */
+
+.body_info {
+  max-width: 1200px;
+  margin: 3.5rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.imm_europa img,
+.imm_balcani img {
+  width: 100%;
+  max-height: 540px;
+  object-fit: cover;
+  border: 1px solid #383530;
+  padding: 6px;
+  background-color: #1f1d1a;
+}
+
+.colonna-destra,
+.colonna-testo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.colonna-destra h2,
+.colonna-testo h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.colonna-destra h3 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #b5aea2;
+}
+
+.sottotitolo-sezione {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #b5aea2;
+  line-height: 1.6;
+}
+
+.T_intesa,
+.griglia-balcani {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+.card-alleanza,
+.card-balcani,
+.box-evento {
+  background-color: #1f1d1a;
+  border: 1px solid #36332e;
+  padding: 1.4rem;
+}
+
+.card-alleanza h4,
+.card-balcani h3,
+.box-evento h3 {
+  margin: 0 0 0.7rem 0;
+  font-size: 1.25rem;
+}
+
+.card-alleanza p,
+.card-balcani p,
+.box-evento p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cfc8bc;
+}
+
+.card-alleanza.intesa {
+  border-top: 3px solid #5a8266;
+}
+
+.card-alleanza.alleanza {
+  border-top: 3px solid #a84646;
+}
+
+.card-balcani.russia {
+  border-left: 3px solid #5a8266;
+}
+
+.card-balcani.austria {
+  border-left: 3px solid #a84646;
+}
+
+.card-alleanza.intesa h4,
+.card-balcani.russia h3 {
+  color: #93bfa0;
+}
+
+.card-alleanza.alleanza h4,
+.card-balcani.austria h3 {
+  color: #d98b8b;
+}
+
+.tooltip-link {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.sezione-balcani {
+  max-width: 1200px;
+  margin: 4rem auto 0 auto;
+  padding-top: 3rem;
+  border-top: 1px solid #2e2b27;
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ==================== GUERRA LAMPO E CAUSE ==================== */
+
+#Guerra_lampo .intestazione-sezione {
+  max-width: 100% !important;
+}
+
+.layout-guerra-lampo {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* ==================== GALLERIA FRONTI ==================== */
+
+.galleria_mappe {
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.imm_oriente,
+.imm_occidente {
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.imm_oriente img,
+.imm_occidente img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #383530;
+  padding: 6px;
+  background-color: #1f1d1a;
+}
+
+/* ==================== TRINCEE E MAPPE ==================== */
+
+#Trincee .griglia-balcani {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+#Trincee .griglia-balcani .nota-storica {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#Trincee .griglia-balcani .nota-storica h3 {
+  margin: 0 0 0.6rem 0;
+  font-size: 1.2rem;
+  color: #f5f1e8;
+}
+
+#Trincee .griglia-balcani .nota-storica p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.griglia-mappe-trincee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  align-items: stretch;
+}
+
+.box-mappa {
+  background-color: #1f1d1a;
+  border: 1px solid #36332e;
+  padding: 1.4rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.box-mappa h3 {
+  font-size: 1.25rem;
+  color: #b59e7a;
+  margin: 0 0 1rem 0;
+}
+
+.cornice-mappa {
+  position: relative;
+  border: 1px solid #383530;
+  background-color: #161513;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.cornice-mappa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.didascalia-mappa {
+  margin: 0.85rem 0 0 0;
+  font-size: 0.9rem;
+  color: #b5aea2;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.pin-mappa {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #a84646;
+  color: #f5f1e8;
+  border: 2px solid #f5f1e8;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.pin-mappa:hover,
+.pin-mappa.attivo {
+  background-color: #b59e7a;
+  color: #161513;
+  transform: translate(-50%, -50%) scale(1.18);
+}
+
+.pannello-info-mappa {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.pannello-info-mappa-interno {
+  padding: 1rem;
+  background-color: #161513;
+  border-left: 3px solid #a84646;
+  border-radius: 0 4px 4px 0;
+}
+
+.pannello-info-mappa h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.05rem;
+  color: #f5f1e8;
+}
+
+.pannello-info-mappa p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cfc8bc;
+  line-height: 1.5;
+}
+
+/* ==================== SEZIONI GENERALI & NOTE ==================== */
+
+.nota-storica {
+  padding: 1rem 1.25rem;
+  background-color: #1b1917;
+  border-left: 3px solid #b59e7a;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #cfc8bc;
+}
+
+.sezione-storia {
+  max-width: 1200px;
+  margin: 4rem auto 0 auto;
+  padding-top: 3rem;
+  border-top: 1px solid #2e2b27;
+}
+
+.intestazione-sezione {
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+
+.etichetta-anno {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b59e7a;
+  margin-bottom: 0.5rem;
+}
+
+.intestazione-sezione h2 {
+  font-size: 2.2rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.intestazione-sezione p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #b5aea2;
+  line-height: 1.6;
+}
+
+.griglia-eventi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.box-evidenza {
+  background-color: #1f1d1a;
+  border: 1px solid #36332e;
+  border-left: 3px solid #b59e7a;
+  padding: 1.75rem 2rem;
+}
+
+.box-evidenza h3 {
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.box-evidenza p {
+  margin: 0;
+  line-height: 1.6;
+  color: #cfc8bc;
+}
+
+
+@media (max-width: 900px) {
+  .body_info,
+  .sezione-balcani,
+  .T_intesa,
+  .griglia-balcani,
+  .griglia-eventi,
+  .griglia-mappe-trincee,
+  #Trincee .griglia-balcani {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+.sezione_mappe{
+  padding-bottom:  0!important;
+}
+  .layout-guerra-lampo {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .layout-guerra-lampo > * {
+    min-width: 0;
+  }
+
+  .pannello-info-mappa {
+    margin-top: 1rem;
+    padding-top: 0;
+  }
+
+  .nav-container {
+    height: auto;
+    flex-direction: column;
+    padding: 0.8rem 0;
+    gap: 0.7rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #carouselExampleAutoplaying .carousel-item img {
+    height: 420px;
+  }
+
+  .hero-overlay {
+    padding: 2rem 1.5rem;
+    background: rgba(22, 21, 19, 0.75);
+  }
+
+  .hero-content h1,
+  .colonna-destra h2,
+  .colonna-testo h2 {
+    font-size: 1.85rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .layout-guerra-lampo {
+    gap: 1.25rem;
+  }
+.sezione_mappe{
+  padding-bottom:  0!important;
+}
+  .ragione h3 {
+    font-size: 0.65rem !important;
+    padding: 8px 4px !important;
+    line-height: 1.2 !important;
+  }
+
+  .layout-guerra-lampo table {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    table-layout: fixed;
+  }
+
+  .layout-guerra-lampo table th,
+  .layout-guerra-lampo table td {
+    padding: clamp(0.3rem, 1.2vw, 0.45rem) clamp(0.25rem, 1vw, 0.4rem);
+    font-size: clamp(0.72rem, 2.2vw, 0.8rem);
+    line-height: 1.4;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    vertical-align: top;
+  }
+
+  .nota-storica {
+    padding: 0.85rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem 0.75rem;
+  }
+
+  .navbar-storica {
+    margin: -1rem -0.75rem 1.5rem -0.75rem;
+  }
+
+  .body_info,
+  .sezione-balcani,
+  .galleria_mappe {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .galleria_mappe {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .imm_oriente,
+  .imm_occidente {
+    width: 100%;
+  }
+
+  .imm_oriente img,
+  .imm_occidente img {
+    height: min(300px, 70vw);
+  }
+
+  .imm_europa img,
+  .imm_balcani img {
+    max-height: none;
+  }
+
+  .box-mappa {
+    padding: 1rem;
+  }
+
+  .pin-mappa {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  #carouselExampleAutoplaying .carousel-item img {
+    height: 360px;
+  }
+
+  .hero-overlay {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.65rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-overlay .btn {
+    padding: 0.7rem 1.25rem;
+  }
+}
+
+.layout-sassari {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.imm_sassari {
+  background-color: #1f1d1a;
+  border: 1px solid #36332e;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.imm_sassari img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #383530;
+}
+
+.colonna-sassari {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.colonna-sassari .box-evidenza {
+  border-left: 3px solid #a84646;
+}
+
+.griglia-sassari-dettagli {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+.card-sassari {
+  background-color: #1f1d1a;
+  border: 1px solid #36332e;
+  border-top: 3px solid #b59e7a;
+  padding: 1.4rem;
+}
+
+.card-sassari h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.15rem;
+  color: #f5f1e8;
+}
+
+.card-sassari p,
+.card-sassari ul {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #cfc8bc;
+}
+
+.card-sassari ul {
+  padding-left: 1.15rem;
+}
+
+.card-sassari li {
+  margin-bottom: 0.45rem;
+}
+
+.card-sassari li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .layout-sassari,
+  .griglia-sassari-dettagli {
+    grid-template-columns: 1fr;
+  }
+
+  .imm_sassari img {
+    height: auto;
+    max-height: 360px;
+  }
+}
